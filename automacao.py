@@ -1,4 +1,7 @@
-
+from selenium import webdriver
+import undetected_chromedriver as uc
+import pyautogui
+import time
 import re
 from pdfminer.high_level import extract_text
 
@@ -100,7 +103,10 @@ def extraiPdf(caminho):
 
     return resultados
 
-
+def executaTarefa():
+    browser = uc.Chrome()
+    browser.get('')
+    time.sleep(10)
 
 
 """while True:
